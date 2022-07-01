@@ -45,6 +45,9 @@ img {
 }
 
 /* Camer views */
-.view01 {
-  @apply absolute w-full h-full;
+.view01,
+.view02,
+.view03,
+.view04 {
+  @apply absolute bg-black opacity-50 w-full h-full;
 }
