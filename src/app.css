@@ -11,7 +11,8 @@ img {
   @apply w-full h-full rounded-sm;
 }
 .camera {
-  @apply w-[1.625rem] h-[1.625rem] absolute text-[0.625rem] font-semibold bg-black text-gray-300 rounded-full;
+  @apply w-[1.625rem] h-[1.625rem] absolute text-[0.625rem] font-semibold bg-black text-gray-300
+  rounded-full hover:bg-zinc-800 transition-all;
 }
 .one {
   @apply right-32 top-[12.375rem];
@@ -24,4 +25,21 @@ img {
 }
 .four {
   @apply left-44 top-[19.25rem];
+}
+
+/* Tooltip for the cameras */
+.tooltip {
+  @apply absolute z-10 min-w-max pb-1 px-1 rounded-[4px] bg-zinc-800 text-white text-base font-normal hidden group-hover:block transition-all;
+}
+.tip-one {
+  @apply -right-5 -top-10;
+}
+.tip-two {
+  @apply -left-5 -bottom-10;
+}
+.tip-three {
+  @apply -left-12 -bottom-10;
+}
+.tip-four {
+  @apply -left-[4.375rem] -top-5;
 }
