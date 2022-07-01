@@ -135,13 +135,12 @@ export default {
 
 <style>
 .view01 {
-  background: black;
-  opacity: 0.5;
   clip-path: polygon(0 0, 100% 0, 100% 56%, 76% 34%, 62.3% 100%, 0 100%);
 }
 .view02 {
-  background: black;
-  opacity: 0.5;
   clip-path: polygon(0 0, 35% 0, 56% 44%, 80% 0, 100% 0, 100% 100%, 0 100%);
+}
+.view03 {
+  clip-path: polygon(0 0, 74% 0, 50% 72%, 100% 36%, 100% 100%, 0 100%);
 }
 </style>
