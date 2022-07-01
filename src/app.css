@@ -11,5 +11,5 @@ img {
   @apply w-full h-full rounded-sm;
 }
 .camera {
-  @apply absolute text-xs font-semibold bg-black text-white p-1 rounded-full;
+  @apply w-7 h-7 absolute text-[0.625rem] font-semibold bg-black text-gray-300 rounded-full;
 }
