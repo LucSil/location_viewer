@@ -6,10 +6,10 @@
     </div>
 
     <!-- Cameras -->
-    <button class="camera">01</button>
-    <button class="camera">02</button>
-    <button class="camera">03</button>
-    <button class="camera">04</button>
+    <button class="camera one">01</button>
+    <button class="camera two">02</button>
+    <button class="camera three">03</button>
+    <button class="camera four">04</button>
   </section>
 </template>
 
