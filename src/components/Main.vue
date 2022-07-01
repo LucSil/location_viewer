@@ -1,6 +1,6 @@
 <template>
   <section class="grid place-items-center relative">
-    <!-- Map Container -->
+    <!-- District Map -->
     <div class="w-full h-full">
       <img src="../images/map.png" alt="building-map" />
     </div>
@@ -9,7 +9,7 @@
     <button class="camera one group">
       01<span class="tooltip tip-one">View 01</span>
     </button>
-    <button class="camera two grou[">
+    <button class="camera two group">
       02<span class="tooltip tip-two">View 02</span>
     </button>
     <button class="camera three group">
