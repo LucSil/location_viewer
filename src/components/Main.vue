@@ -7,31 +7,129 @@
 
     <!-- Cameras -->
     <!-- camera 01 -->
-    <button class="camera one group">
+    <button
+      v-if="one"
+      class="camera one group"
+      @mouseenter="showView"
+      @mouseleave="hideView"
+    >
       01<span class="tooltip tip-one">View 01</span>
     </button>
-    <div class="view01"></div>
+    <div class="view01" v-if="view01"></div>
 
     <!-- camera 02 -->
-    <button class="camera two group">
+    <button
+      v-if="two"
+      class="camera two group"
+      @mouseenter="showView"
+      @mouseleave="hideView"
+    >
       02<span class="tooltip tip-two">View 02</span>
     </button>
+    <div class="view02" v-if="view02"></div>
 
     <!-- camera 03 -->
-    <button class="camera three group">
+    <button
+      v-if="three"
+      class="camera three group"
+      @mouseenter="showView"
+      @mouseleave="hideView"
+    >
       03<span class="tooltip tip-three">View 03</span>
     </button>
+    <div class="view03" v-if="view03"></div>
 
     <!-- camera 04 -->
-    <button class="camera four group">
+    <button
+      v-if="four"
+      class="camera four group"
+      @mouseenter="showView"
+      @mouseleave="hideView"
+    >
       04<span class="tooltip tip-four">View 04</span>
     </button>
+    <div class="view04" v-if="view04"></div>
   </section>
 </template>
 
 <script>
 export default {
   name: "Main",
+  data() {
+    return {
+      // Camera Icons
+      one: true,
+      two: true,
+      three: true,
+      four: true,
+
+      // Camera Views
+      view01: false,
+      view02: false,
+      view03: false,
+      view04: false,
+    };
+  },
+
+  methods: {
+    showView: function (e) {
+      let one = document.querySelector(".one");
+      let two = document.querySelector(".two");
+      let three = document.querySelector(".three");
+      let four = document.querySelector(".four");
+
+      if (e.target == one) {
+        this.view01 = true;
+        this.two = false;
+        this.three = false;
+        this.four = false;
+      } else if (e.target == two) {
+        this.view02 = true;
+        this.one = false;
+        this.three = false;
+        this.four = false;
+      } else if (e.target == three) {
+        this.view03 = true;
+        this.one = false;
+        this.two = false;
+        this.four = false;
+      } else if (e.target == four) {
+        this.view04 = true;
+        this.one = false;
+        this.two = false;
+        this.three = false;
+      }
+    },
+
+    hideView: function (e) {
+      let one = document.querySelector(".one");
+      let two = document.querySelector(".two");
+      let three = document.querySelector(".three");
+      let four = document.querySelector(".four");
+
+      if (e.target == one) {
+        this.view01 = false;
+        this.two = true;
+        this.three = true;
+        this.four = true;
+      } else if (e.target == two) {
+        this.view02 = false;
+        this.one = true;
+        this.three = true;
+        this.four = true;
+      } else if (e.target == three) {
+        this.view03 = false;
+        this.one = true;
+        this.two = true;
+        this.four = true;
+      } else if (e.target == four) {
+        this.view04 = false;
+        this.one = true;
+        this.two = true;
+        this.three = true;
+      }
+    },
+  },
 };
 </script>
 
