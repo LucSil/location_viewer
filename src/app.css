@@ -11,5 +11,17 @@ img {
   @apply w-full h-full rounded-sm;
 }
 .camera {
-  @apply w-7 h-7 absolute text-[0.625rem] font-semibold bg-black text-gray-300 rounded-full;
+  @apply w-[1.625rem] h-[1.625rem] absolute text-[0.625rem] font-semibold bg-black text-gray-300 rounded-full;
+}
+.one {
+  @apply right-32 top-[12.375rem];
+}
+.two {
+  @apply right-[15.625rem] top-60;
+}
+.three {
+  @apply bottom-[10.3125rem] left-[18.4375rem];
+}
+.four {
+  @apply left-44 top-[19.25rem];
 }
