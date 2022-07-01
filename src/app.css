@@ -10,3 +10,6 @@
 img {
   @apply w-full h-full rounded-sm;
 }
+.camera {
+  @apply absolute text-xs font-semibold bg-black text-white p-1 rounded-full;
+}
