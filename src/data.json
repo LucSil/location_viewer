@@ -1,8 +1,8 @@
 {
   "images": {
-    "one": {},
-    "two": {},
-    "three": {},
-    "four": {}
+    "one": "images/views/one.jpeg",
+    "two": "images/views/one.jpeg",
+    "three": "images/views/one.jpeg",
+    "four": "images/views/one.jpeg"
   }
 }
