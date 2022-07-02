@@ -8,6 +8,8 @@
 img {
   @apply w-full h-full rounded-sm;
 }
+
+/* Styles for camera icons */
 .camera {
   @apply w-[1.625rem] h-[1.625rem] absolute z-20 text-[0.625rem] font-semibold bg-black text-gray-300
   rounded-full hover:bg-zinc-800 transition-all;
@@ -25,7 +27,7 @@ img {
   @apply left-44 top-[19.25rem];
 }
 
-/* Tooltip for the cameras */
+/* Styles for tooltip for the camera icons */
 .tooltip {
   @apply absolute z-30 min-w-max pb-1 px-1 rounded-[4px] bg-zinc-800 text-white text-base font-normal hidden group-hover:block transition-all;
 }
@@ -42,7 +44,7 @@ img {
   @apply -left-[4.375rem] -top-5;
 }
 
-/* Camera views */
+/* Styles for camera views */
 .view01,
 .view02,
 .view03,
