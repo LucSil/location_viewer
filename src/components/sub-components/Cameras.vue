@@ -4,6 +4,7 @@
   <button
     v-if="one"
     class="camera one group"
+    @click="$emit('viewImg', $event.target)"
     @mouseenter="showView"
     @mouseleave="hideView"
   >
@@ -15,6 +16,7 @@
   <button
     v-if="two"
     class="camera two group"
+    @click="$emit('viewImg', $event.target)"
     @mouseenter="showView"
     @mouseleave="hideView"
   >
@@ -26,6 +28,7 @@
   <button
     v-if="three"
     class="camera three group"
+    @click="$emit('viewImg', $event.target)"
     @mouseenter="showView"
     @mouseleave="hideView"
   >
@@ -37,6 +40,7 @@
   <button
     v-if="four"
     class="camera four group"
+    @click="$emit('viewImg', $event.target)"
     @mouseenter="showView"
     @mouseleave="hideView"
   >
@@ -48,6 +52,7 @@
 <script>
 export default {
   name: "Cameras",
+  emits: ["viewImg"],
   data() {
     return {
       // Camera Icons
