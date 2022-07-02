@@ -7,6 +7,14 @@
 
     <!-- Cameras -->
     <Cameras />
+
+    <!-- Image section -->
+    <div
+      v-if="images"
+      class="absolute bottom-0 left-0 w-56 border-2 border-amber-500"
+    >
+      <img :src="require(`../${images}`)" alt="" />
+    </div>
   </section>
 </template>
 
