@@ -4,12 +4,6 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./src/components/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        nunito: ["Nunito Sans", "sans-serif"],
-      },
-    },
-  },
+  theme: {},
   plugins: [],
 };
