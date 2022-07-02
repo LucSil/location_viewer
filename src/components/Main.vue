@@ -6,7 +6,7 @@
     </div>
 
     <!-- Cameras -->
-    <Cameras />
+    <Cameras @viewImg="viewImg" />
 
     <!-- Image section -->
     <div
@@ -19,9 +19,32 @@
 </template>
 
 <script>
+import mainData from "@/data.json";
 import Cameras from "@/components/sub-components/Cameras.vue";
 export default {
   name: "Main",
   components: { Cameras },
+  data() {
+    return {
+      images: false,
+    };
+  },
+  methods: {
+    viewImg: function (target) {
+      let one = document.querySelector(".one");
+      let two = document.querySelector(".two");
+      let three = document.querySelector(".three");
+      let four = document.querySelector(".four");
+      if (target == one) {
+        this.images = mainData.images.one;
+      } else if (target == two) {
+        this.images = mainData.images.two;
+      } else if (target == three) {
+        this.images = mainData.images.three;
+      } else if (target == four) {
+        this.images = mainData.images.four;
+      }
+    },
+  },
 };
 </script>
